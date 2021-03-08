@@ -8,6 +8,8 @@ from PIL import Image
 def app():
 	
 	st.title('Dam Occupancy Rate Forecasting')
+	image = Image.open('istanbul.jpg')
+	st.image(image,width=600)
 	st.subheader('Our Project Purpose')
 	st.markdown("""<p style='text-align: justify;'>Unconsciously use of water resources have being affected the world.\nWith climate change, our water resources are running out rapidly.\nAddition to these, dam occupancy rates become more significant for countries such as Turkey.</p>""", unsafe_allow_html=True)
 	st.markdown("""<p style='text-align: justify;'>Our project aims to forecast dam occupancy rate of İstanbul. Also we aimed for this project to accurately estimate the future dam occupancy rate.</p>""", unsafe_allow_html=True)
@@ -21,13 +23,12 @@ def app():
 	st.subheader('\nThe Links for The Data')
 	st.markdown("""<p style='text-align: justify;'>If you are interested, you can access the data from the links below.</p>""", unsafe_allow_html=True)
 
-	link = '[Istanbul Metropolitan Municipality - Data](https://data.ibb.gov.tr/)'
+	link = '[Istanbul Metropolitan Municipality - Data](https://data.ibb.gov.tr/dataset/istanbul-dam-occupany-rates-data)'
 	st.markdown(link, unsafe_allow_html=True)
 	link = '[Istanbul Weather Data - Kaggle](https://www.kaggle.com/vonline9/weather-istanbul-data-20092019)'
 	st.markdown(link, unsafe_allow_html=True)
 
-	image = Image.open('istanbul.jpg')
-	st.image(image,width=600,caption="Ortaköy - Istanbul")
+	
 
 
 	

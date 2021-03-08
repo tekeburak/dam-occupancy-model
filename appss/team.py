@@ -8,18 +8,21 @@ from PIL import Image
 def app():
 	st.title('Our Team')
 	st.subheader('Who we are?')
-	st.markdown("""<p style='text-align: justify;'>Our team consists of NUMBER classmates that are members of Turkey Study Group (#sg_turkey) of AI - Bertelsmann Scholarship Program.</p>""", unsafe_allow_html=True)
+	st.markdown("""<p style='text-align: justify;'>Our project team consists of 8 classmates that are members of Turkey Study Group (#sg_turkey) of AI - Bertelsmann Scholarship Program.</p>""", unsafe_allow_html=True)
 	st.markdown("""<p style='text-align: justify;'>We have completed our work on our project by having meetings every week during the scholarship program.</p>""", unsafe_allow_html=True)
 	
-	image = Image.open('team.jpg')
-	st.image(image,width=600,caption="Our Team Meeting")
-
-	st.subheader('\nContact Us')
+	image = Image.open('TeamMeeting.png')
+	st.image(image,width=600)
 	
-	image = Image.open('cv.jpg')
-	st.image(image,width=250,caption="FirstName LastName")
+	st.markdown("""<p style='text-align: justify;'>Moreover, we have shared information about the course requirements, challenges, events and resources in our weekly meetings.</p>""", unsafe_allow_html=True)
+	st.markdown("""<p style='text-align: justify;'>We keep communicating with each other to motivate and improve our technical and social skills. If you want to join our group, you can reach the link below.</p>""", unsafe_allow_html=True)
+	link = '[#sg_turkey Study Group](https://app.slack.com/client/T01E9ECEM0D/C01HD5FGLNM)'
+	st.markdown(link, unsafe_allow_html=True)
 
-	image = Image.open('cv2.jpg')
-	st.image(image,width=250,caption="FirstName2 LastName2")
+
+
+	
+	
+
 
 	

@@ -42,7 +42,7 @@ class MultiApp:
         # app = st.sidebar.radio(
         st.sidebar.title("Welcome")
         app = st.sidebar.radio(
-            'Where you wanna go?',
+            '\n',
             self.apps,
             format_func=lambda app: app['title'])
 
