@@ -15,10 +15,11 @@ def app():
 	st.markdown("""<p style='text-align: justify;'>BLABLA</p>""", unsafe_allow_html=True)
 
 
-	model = tf.keras.models.load_model('cnn_model.h5')
+	CNN_model_name = 'CNN_model.h5'
+
+	model_cnn = tf.keras.models.load_model(CNN_model_name)
 
 	features = get_open_weather_map_data()
 
-	prediction = model.predict(features)
-	
-	st.line_chart(prediction[0, :, 0].reshape(-1))
+
+	prediction_cnn = model_cnn.predict(features) * 100
