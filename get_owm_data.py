@@ -9,11 +9,13 @@ URL = "https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&exclude=cur
 
 data_size = 7
 
-owm_list = []
+
 
 def get_open_weather_map_data():
     response = requests.get(URL)
     data = json.loads(response.text)
+    
+    owm_list = []
 
     for i in range(data_size):
         if 'rain' in data['daily'][i]:
@@ -30,5 +32,6 @@ def get_open_weather_map_data():
         owm_list.append(owm_data)
         out = np.transpose(np.array(owm_list))
         out = np.expand_dims(out, axis=0)
+        
 
     return out

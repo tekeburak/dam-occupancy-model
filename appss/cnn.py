@@ -1,6 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import pandas as pd
+import numpy
 from get_owm_data import get_open_weather_map_data
 
 
@@ -21,5 +22,5 @@ def app():
 
 	features = get_open_weather_map_data()
 
-
 	prediction_cnn = model_cnn.predict(features) * 100
+	st.line_chart(prediction_cnn.reshape(-1))
