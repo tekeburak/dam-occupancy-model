@@ -1,9 +1,11 @@
 import streamlit as st
 import datetime
+import pandas as pd
 import matplotlib.pyplot as plt
 import pickle
 import os
 
+import matplotlib.dates as mdates
 
 def app():
 	st.title("ARIMA Model")
@@ -34,16 +36,23 @@ def app():
 	steps = (selected_date.year - last_date.year)*12+add-subtract
 	
 	
-	
-	
 	load_model = pickle.load(open('./appss/arima_model.pkl', 'rb'))
 	
 	predictions = load_model.forecast(steps)[0]
-	#st.write(predictions)
-	
+
+	end_date = ""
+	if selected_date.month <= 11:
+		end_date = str(selected_date.year)+"-"+str(selected_date.month+1)
+	else:
+		end_date = str(selected_date.year+1)+"-"+"01"
+	dates = pd.date_range(start="2018-09",end=end_date, freq='M').values
+	dates = dates.astype('datetime64[M]')
+
 	fig, ax = plt.subplots()
-	ax.plot(predictions)
+	ax.plot(dates, predictions)
+	plt.setp(ax.get_xticklabels(), rotation=90)
 	#add date to the x-axes
 	#add data before the forecast with different color
 	#add title
 	st.pyplot(fig)
+	

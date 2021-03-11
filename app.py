@@ -5,6 +5,10 @@ from appss import home, arima, lstm, cnn, team, contact
 
 
 app = MultiApp()
+CONV_WIDTH = 3
+LABEL_WIDTH = 30
+INPUT_WIDTH = 7
+
 
 
 app.add_app("HOME", home.app)

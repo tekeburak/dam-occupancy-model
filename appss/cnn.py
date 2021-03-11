@@ -21,4 +21,4 @@ def app():
 
 	prediction = model.predict(features)
 	
-	st.write(prediction.shape)
+	st.line_chart(prediction[0, :, 0].reshape(-1))
