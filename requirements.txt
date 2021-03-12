@@ -1,0 +1,9 @@
+tensorflow==2.3.0
+requests==2.25.1
+pandas==1.2.3
+streamlit==0.78.0
+numpy==1.18.5
+statsmodels==0.12.2
+matplotlib==3.3.4
+Pillow==8.1.2
+streamlit_theme==0.58.0
