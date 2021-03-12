@@ -1,6 +1,8 @@
 # dam-occupancy-model
 Udacity Bertelsmann AI Track Study Group Turkey GitHub project page.
 
+![image](...)
+
 ### Table of Contents
 
 1. [Installation](#installation)
