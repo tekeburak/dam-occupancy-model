@@ -57,7 +57,7 @@ CNN MODEL - Convolutional Neural Network, Deep learning algorithm
 ## Deployment<a name="deployment"></a>
 
 
-This is a interactive web applications with Streamlit webb app
+This is a interactive web applications with Streamlit
 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
