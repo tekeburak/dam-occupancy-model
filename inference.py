@@ -11,3 +11,6 @@ input = get_open_weather_map_data()
 
 prediction_lstm = model_lstm.predict(input) * 100
 prediction_cnn = model_cnn.predict(input) * 100
+
+prediction_lstm = prediction_lstm.ravel()
+prediction_cnn = prediction_cnn.ravel()
