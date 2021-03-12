@@ -47,7 +47,7 @@ The dam occupancy rates were used as a dependent variable while reserved water, 
 - 1 jupyter notebook for data visualization
 
 
-# Analysis Process <a name="process"></a>
+## Analysis Process <a name="process"></a>
 
 ARIMA MODEL - Auto Regressive Integrated Moving Average algorithm
 
