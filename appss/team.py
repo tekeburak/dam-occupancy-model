@@ -16,7 +16,7 @@ def app():
 	
 	st.markdown("""<p style='text-align: justify;'>Moreover, we have shared information about the course requirements, challenges, events and resources in our weekly meetings.</p>""", unsafe_allow_html=True)
 	st.markdown("""<p style='text-align: justify;'>We keep communicating with each other to motivate and improve our technical and social skills. If you want to join our group, you can reach the link below.</p>""", unsafe_allow_html=True)
-	link = '[#sg_turkey Study Group](https://app.slack.com/client/T01E9ECEM0D/C01HD5FGLNM)'
+	link = '[#sg_turkey - Study Group](https://app.slack.com/client/T01E9ECEM0D/C01HD5FGLNM)'
 	st.markdown(link, unsafe_allow_html=True)
 
 

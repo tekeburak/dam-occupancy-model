@@ -15,6 +15,7 @@ def app():
 	
 	
 	image = Image.open('images/burak.jpg').resize(newsize)
+	alt="Avatar"
 	row1[0].image(image)
 	row1[0].subheader('Burak Teke')
 	link = '[LinkedIn](https://www.linkedin.com/in/burakteke)'
