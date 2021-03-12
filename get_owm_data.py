@@ -38,7 +38,7 @@ def get_open_weather_map_data():
         
         owm_data = [Rain, MaxTemp, MinTemp, AvgWind, AvgHumidity, AvgPressure]
         owm_list.append(owm_data)
-        out = np.transpose(np.array(owm_list))
+        out = np.array(owm_list)
         out = np.expand_dims(out, axis=0)
 
     return out
