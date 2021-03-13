@@ -8,10 +8,10 @@ def app():
 	st.title("LSTM Model")
 	
 	st.subheader('What does LSTM model do?')
-	st.markdown("""<p style='text-align: justify;'>Long Short-Term Memory (LSTM) networks are a type of recurrent neural network capable of learning order dependence in sequence prediction problems. An LSTM has a similar control flow as a recurrent neural network. It processes data passing on information as it propagates forward. The differences are the operations within the LSTM's cells. These operations are used to allow the LSTM to keep or forget information.</p>""", unsafe_allow_html=True)
+	st.markdown("""<p style='text-align: justify;'>LSTM networks are an extension of recurrent neural networks (RNNs) mainly introduced to handle situations where RNNs fail. It has been so designed that thevanishing gradient problem is almost completely removed, while the training model is left unaltered. Long-time lags in certain problems are bridged using LSTMs where they also handle noise, distributed representations, and continuous values.</p>""", unsafe_allow_html=True)
 	
-	#st.subheader('Why we chose LSTM?')
-	#st.markdown("""<p style='text-align: justify;'>BLABLA</p>""", unsafe_allow_html=True)	
+	st.subheader('Why we chose LSTM?')
+	st.markdown("""<p style='text-align: justify;'>LSTM is well-suited to classify, process and predict time series given time lags of unknown duration. Relative insensitivity to gap length gives an advantage to LSTM over alternative RNNs, hidden Markov models and other sequence learningmethods. In addition, LSTM works great because LSTM cells have a memory that can store previous timestep information and this is how it learns.</p>""", unsafe_allow_html=True)	
 	
 	
 	LSTM_model_name = 'models/LSTM_model.h5'
