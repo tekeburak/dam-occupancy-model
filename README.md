@@ -47,9 +47,9 @@ The dam occupancy rates were used as a dependent variable while reserved water, 
 ## Analysis Process <a name="process"></a>
 
 Selected Models:
-ARIMA MODEL - Auto Regressive Integrated Moving Average algorithm
-LSTM MODEL - Long Short Term Memory algorithm
-CNN MODEL - Convolutional Neural Network, Deep learning algorithm
+- ARIMA MODEL - Auto Regressive Integrated Moving Average algorithm
+- LSTM MODEL - Long Short Term Memory algorithm
+- CNN MODEL - Convolutional Neural Network, Deep learning algorithm
 
 
 ## Deployment<a name="deployment"></a>
