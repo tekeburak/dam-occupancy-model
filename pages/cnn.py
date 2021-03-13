@@ -20,6 +20,9 @@ def app():
 	st.subheader('Why we chose CNN?')
 	st.markdown("""<p style='text-align: justify;'>A convolutional model makes predictions based on a fixed-width history, which may lead to better performance than the dense model since it can see how things are changing over time.</p>""", unsafe_allow_html=True)
 
+	st.subheader('CNN model input and output')
+	st.markdown("Model input is 7 days daily weather data from [OpenWeatherAPI](https://openweathermap.org/api). Model input features are *Rain*, *MaxTemp*, *MinTemp*, *AvgWind*, *AvgHumidity* and *AvgPressure*. Model predicts 7 days dam occupancy rate of İstanbul using these features.", unsafe_allow_html=True)
+
 
 	CNN_model_name = 'models/CNN_model.h5'
 
