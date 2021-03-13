@@ -7,3 +7,4 @@ requests==2.25.1
 matplotlib==3.3.4
 tensorflow==2.3.0
 Pillow==8.1.2
+statsmodels==0.12.2
