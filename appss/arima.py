@@ -16,7 +16,7 @@ def app():
 	st.subheader('Why we chose ARIMA?')
 	st.markdown("""<p style='text-align: justify;'>ARIMA is very popular statistical method and it is an answer to an important question that we need a more complex model or not. You can access our process of modeling from the link below.</p>""", unsafe_allow_html=True)	
 
-	link = '[Process of ARIMA Modeling](https://github.com/tekeburak/dam-occupancy-model/blob/train_model/arima.ipynb)'
+	link = '[Process of ARIMA Modeling](https://github.com/tekeburak/dam-occupancy-model/blob/train_model/notebooks/arima.ipynb)'
 	st.markdown(link, unsafe_allow_html=True)
 
 	st.subheader("Try out ARIMA Model")
