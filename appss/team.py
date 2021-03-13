@@ -19,6 +19,11 @@ def app():
 	link = '[#sg_turkey - Study Group](https://app.slack.com/client/T01E9ECEM0D/C01HD5FGLNM)'
 	st.markdown(link, unsafe_allow_html=True)
 
+	st.markdown("""<p style='text-align: justify;'>As you know, our slack workspace will be closed when Phase 1 is over. Therefore, we can stay in touch at Phase 2 via the link below.</p>""", unsafe_allow_html=True)
+	link = '[Bertelsmann AI Track - Discord](https://discord.com/invite/T3qhsXkEKB)'
+	st.markdown(link, unsafe_allow_html=True)
+
+
 
 
 	
