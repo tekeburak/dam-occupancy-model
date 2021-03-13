@@ -6,6 +6,10 @@ import pickle
 import os
 
 import matplotlib.dates as mdates
+import plotly.graph_objects as go
+from plotly import tools
+import plotly.offline as py
+import plotly.express as px
 
 def app():
 	st.title("ARIMA Model")
@@ -48,11 +52,17 @@ def app():
 	dates = pd.date_range(start="2018-09",end=end_date, freq='M').values
 	dates = dates.astype('datetime64[M]')
 
-	fig, ax = plt.subplots()
-	ax.plot(dates, predictions)
-	plt.setp(ax.get_xticklabels(), rotation=90)
-	#add date to the x-axes
-	#add data before the forecast with different color
-	#add title
-	st.pyplot(fig)
+	data = []
+
+	layout = go.Layout(
+	
+	title= "<b>ARIMA Model Dam Occupancy Forecasting Plot</b>",paper_bgcolor = 'rgb(248, 248, 255)',plot_bgcolor = 'rgb(248, 248, 255)',barmode = "stack",
+	xaxis = dict(title="Time", linecolor="#BCCCDC",showspikes=True,spikethickness=2,spikedash="dot",spikecolor= "#ffffff",spikemode="across",),
+	yaxis= dict(title="Dam Occupancy Rate (%)",linecolor="#021C1E"))
+
+
+	line_chart= go.Scatter(x=dates, y=predictions, marker_color='rgb(0, 200, 200)' )
+	data.append(line_chart)
+	fig= go.Figure(data=data, layout=layout)
+	st.plotly_chart(fig)
 	
