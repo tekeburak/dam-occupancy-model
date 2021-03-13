@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit_theme as stt
-from multiapp import MultiApp
-from appss import home, arima, lstm, cnn, team, contact
+from utils.multiapp import MultiApp
+from pages import home, arima, lstm, cnn, team, contact
 
 
 app = MultiApp()

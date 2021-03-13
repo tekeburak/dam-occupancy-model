@@ -11,7 +11,7 @@ def app():
 	st.markdown("""<p style='text-align: justify;'>Our project team consists of 8 classmates that are members of Turkey Study Group (#sg_turkey) of AI - Bertelsmann Scholarship Program.</p>""", unsafe_allow_html=True)
 	st.markdown("""<p style='text-align: justify;'>We have completed our work on our project by having meetings every week during the scholarship program.</p>""", unsafe_allow_html=True)
 	
-	image = Image.open('TeamMeeting.png')
+	image = Image.open('images/TeamMeeting.png')
 	st.image(image,width=600)
 	
 	st.markdown("""<p style='text-align: justify;'>Moreover, we have shared information about the course requirements, challenges, events and resources in our weekly meetings.</p>""", unsafe_allow_html=True)

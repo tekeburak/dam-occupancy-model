@@ -36,7 +36,7 @@ def app():
 	steps = (selected_date.year - last_date.year)*12+add-subtract
 	
 	
-	load_model = pickle.load(open('./appss/arima_model.pkl', 'rb'))
+	load_model = pickle.load(open('models/arima_model.pkl', 'rb'))
 	
 	predictions = load_model.forecast(steps)[0]
 

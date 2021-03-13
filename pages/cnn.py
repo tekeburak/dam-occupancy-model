@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 import pandas as pd
 import numpy
-from get_owm_data import get_open_weather_map_data
+from utils.get_owm_data import get_open_weather_map_data
 
 
 
@@ -16,7 +16,7 @@ def app():
 	st.markdown("""<p style='text-align: justify;'>BLABLA</p>""", unsafe_allow_html=True)
 
 
-	CNN_model_name = 'CNN_model.h5'
+	CNN_model_name = 'models/CNN_model.h5'
 
 	model_cnn = tf.keras.models.load_model(CNN_model_name)
 

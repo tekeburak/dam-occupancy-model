@@ -1,7 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import numpy
-from get_owm_data import get_open_weather_map_data
+from utils.get_owm_data import get_open_weather_map_data
 
 
 def app():
@@ -14,7 +14,7 @@ def app():
 	st.markdown("""<p style='text-align: justify;'>BLABLA</p>""", unsafe_allow_html=True)	
 	
 	
-	LSTM_model_name = 'LSTM_model.h5'
+	LSTM_model_name = 'models/LSTM_model.h5'
 
 	model_lstm = tf.keras.models.load_model(LSTM_model_name)
 

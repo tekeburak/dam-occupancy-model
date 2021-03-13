@@ -8,7 +8,7 @@ from PIL import Image
 def app():
 	
 	st.title('Dam Occupancy Rate Forecasting')
-	image = Image.open('istanbul.jpg')
+	image = Image.open('images/istanbul.jpg')
 	st.image(image,width=600)
 	st.subheader('Our Project Purpose')
 	st.markdown("""<p style='text-align: justify;'>Unconsciously use of water resources have being affected the world.\nWith climate change, our water resources are running out rapidly.\nAddition to these, dam occupancy rates become more significant for countries such as Turkey.</p>""", unsafe_allow_html=True)
