@@ -1,4 +1,4 @@
-# dam-occupancy-model
+# İstanbul Dam Occupancy Forecasting Project
 Udacity Bertelsmann AI Track Study Group Turkey GitHub project page.
 
 ![image](https://github.com/tekeburak/dam-occupancy-model/blob/update_docs/Home.PNG)
