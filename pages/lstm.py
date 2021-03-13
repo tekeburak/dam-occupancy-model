@@ -19,6 +19,9 @@ def app():
 	st.subheader('Why we chose LSTM?')
 	st.markdown("""<p style='text-align: justify;'>LSTM is well-suited to classify, process and predict time series given time lags of unknown duration. Relative insensitivity to gap length gives an advantage to LSTM over alternative RNNs, hidden Markov models and other sequence learningmethods. In addition, LSTM works great because LSTM cells have a memory that can store previous timestep information and this is how it learns.</p>""", unsafe_allow_html=True)	
 	
+	st.subheader('LSTM model input and output')
+	st.markdown("Model input is 7 days daily weather data from [OpenWeatherAPI](https://openweathermap.org/api). Model input features are *Rain*, *MaxTemp*, *MinTemp*, *AvgWind*, *AvgHumidity* and *AvgPressure*. Model predicts 7 days dam occupancy rate of İstanbul using these features.", unsafe_allow_html=True)
+
 	
 	LSTM_model_name = 'models/LSTM_model.h5'
 
