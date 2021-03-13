@@ -1,7 +1,7 @@
 # dam-occupancy-model
 Udacity Bertelsmann AI Track Study Group Turkey GitHub project page.
 
-![image](...)
+![image](https://github.com/tekeburak/dam-occupancy-model/blob/update_docs/Home.PNG)
 
 ### Table of Contents
 
@@ -21,13 +21,9 @@ There should be no necessary libraries to run the code here beyond the Anaconda 
 
 ## Project Motivation<a name="motivation"></a>
 
-The aim of this project is to develop a Dam Occupancy Rate prediction model using machine learning techniques. It is a Side Project of Udacity Bertelsmann AI Track Study Group Turkey. 
+The aim of this project is to develop an Istanbul Dam Occupancy Rate prediction model using machine learning techniques. It is a Side Project of Udacity Bertelsmann AI Track Study Group Turkey. 
 
 The prediction of the dam occupancy rate of the reservoirs is critical in many cases (evaluating structural problems, water supply, resource availability, navigation management, disaster prevention). 
-
-Questions to be answered:
-- Is there enough data available to develop a Dam Occupancy Rate prediction model?
-- How well can we predict the dam occupancy rate of reservoirs?
 
 
 ## Dataset<a name="dataset"></a>
@@ -43,23 +39,24 @@ The dam occupancy rates were used as a dependent variable while reserved water, 
 - dam_occupancy csv file
 - Istanbul_weather_data csv file
 - Istanbul_5days_weather_forecast test xlsx file
-- 1 jupyter notebook to showcase work related to prediction. Markdown cells were used to assist in walking through the thought process for individual steps.  
-- 1 jupyter notebook for data visualization
+- train model branch files
+- streamlit branch files
+- README doc
 
 
 ## Analysis Process <a name="process"></a>
 
+Selected Models:
 ARIMA MODEL - Auto Regressive Integrated Moving Average algorithm
-
 LSTM MODEL - Long Short Term Memory algorithm
-
 CNN MODEL - Convolutional Neural Network, Deep learning algorithm
 
 
 ## Deployment<a name="deployment"></a>
 
+This is a interactive web applications with Streamlit. Check out the app [here](https://share.streamlit.io/tekeburak/dam-occupancy-model/streamlit/app.py)
 
-This is a interactive web applications with Streamlit
+![image](https://github.com/tekeburak/dam-occupancy-model/blob/update_docs/Project%20AI%20Turkey.gif)
 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
